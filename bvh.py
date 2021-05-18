@@ -19,11 +19,6 @@ class Joint:
         self.motion=[] # 每一帧的位置
         self.index=index 
     
-    def withPosition(self):
-        return any([x.endswith("position") for x in self.channels])
-
-    def withRotation(self):
-        return any([x.endswith("rotation") for x in self.channels])
 
 class Skeleton:
     def __init__(self):
